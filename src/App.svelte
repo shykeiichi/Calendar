@@ -37,6 +37,12 @@
 		return date.getMonth()
 	}
 
+	function get_week_day() {
+		var date = new Date();
+		// console.log(date.getDate());
+		return date.getDay()
+	}
+
 </script>
 
 <main>
@@ -79,7 +85,7 @@
 	<div class="weeks">
 		{#each [0, 1, 2, 3, 4] as i} 
 			{#each weeks as week, week_i}
-				{#if week_i == 3 && i == parseInt(get_day() / 5) - 1} 
+				{#if week_i == get_week_day() && i == parseInt(get_day() / 5) - 1} 
 					<div class="selected">
 						{week}
 					</div>
