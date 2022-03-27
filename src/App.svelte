@@ -203,19 +203,32 @@
 		</div>	
 		<div class="hss">
 			{#each get_hours() as hour} 
-				{#if get_hour() != hour}
-					<div class="hs">
-						{hour}
-					</div>
+				{#if hour.toString().length == 2}
+					{#if get_hour() != hour}
+						<div class="hs">
+							{hour}
+						</div>
+					{:else}
+						<div class="hs selected">
+							{hour}
+						</div>
+					{/if}
 				{:else}
-					<div class="hs selected">
-						{hour}
-					</div>
+					{#if get_hour() != hour}
+						<div class="hs">
+							{"0" + hour.toString()}
+						</div>
+					{:else}
+						<div class="hs selected">
+							{"0" + hour.toString()}
+						</div>
+					{/if}
 				{/if}
 			{/each}
 		</div>
 		<div class="mss">
 			{#each get_minutes() as hour} 
+			{#if hour.toString().length == 2}
 				{#if get_minute() != hour}
 					<div class="hs">
 						{hour}
@@ -225,6 +238,17 @@
 						{hour}
 					</div>
 				{/if}
+			{:else}
+				{#if get_minute() != hour}
+					<div class="hs">
+						{"0" + hour.toString()}
+					</div>
+				{:else}
+					<div class="hs selected">
+						{"0" + hour.toString()}
+					</div>
+				{/if}
+		{/if}
 			{/each}
 		</div>
 	</div>
