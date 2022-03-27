@@ -237,6 +237,7 @@
 		font-size: 30px;
 		padding-left: 120px;
 		padding-top: 40px;
+		background-color: white;
 	}
 	
 	time {
@@ -305,7 +306,7 @@
 		position: absolute;
 		display: flex;
 		flex-direction: row;
-		left: 250px;
+		left: 245px;
 		flex-basis: 20px;
 		gap: 24px;
 		margin-top: -36px;
@@ -314,6 +315,7 @@
 	
 	.day {
 		width: 35px;
+		text-align: center;
 	}
 
 	.selected {
