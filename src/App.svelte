@@ -254,7 +254,7 @@
 		flex-direction: row;
 		left: 250px;
 		flex-basis: 20px;
-		gap: 26px;
+		gap: 25px;
 		font-weight: normal;
 	}
 
@@ -264,7 +264,7 @@
 		flex-direction: row;
 		left: 250px;
 		flex-basis: 20px;
-		gap: 26px;
+		gap: 25px;
 		font-weight: normal;
 		top: 70px;
 		width: 1800px;
@@ -308,7 +308,7 @@
 		flex-direction: row;
 		left: 245px;
 		flex-basis: 20px;
-		gap: 26px;
+		gap: 25px;
 		margin-top: -36px;
 		font-weight: normal;
 	}
