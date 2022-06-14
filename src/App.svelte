@@ -34,6 +34,7 @@
 		var date = new Date();
 		// console.log(date.getDate());
 		return date.getDate()
+		// return 25;
 	}
 
 	function get_month() {
@@ -44,7 +45,7 @@
 
 	function get_year() {
 		var date = new Date();
-		// console.log(date.getDate());
+		console.log(date.getDate());
 		return date.getFullYear()
 	}
 
@@ -180,7 +181,7 @@
 			T
 		</div> -->
 		{#each get_weekdays() as day, i}
-			{#if i == get_day()}
+			{#if i - 1 == get_day()}
 				<div class="selected">
 					{day}
 				</div>
